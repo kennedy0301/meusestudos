@@ -1,0 +1,4 @@
+italico = <i>não semantico e <em> semantico
+negrito = <b>não semantico e <Strong>semantico 
+
+Aula 8.3

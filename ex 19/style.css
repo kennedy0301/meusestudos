@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom, rgb(117, 195, 240), rgba(0, 174, 255, 0.507));
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    color: blue;
+}
+
+h1#principal{
+    text-align: center;
+}

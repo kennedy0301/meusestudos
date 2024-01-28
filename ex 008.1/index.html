@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Outras formatações" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <code>
+        <h1>Outras formatações</h1>
+        
+        <h2>
+            Nessa aula veremos tipos diferente de formatação em html
+        </h2>
+        <p><strong>lembre-se:</strong> ctrl + shift + p = chamar uma janela para poder envelopar(wrap with abbreviation)</p>
+        <p>shift + tab = recuar tabulação</p>
+         
+        <h2>1°situação problema:</h2>
+         <p>"Quando se escreve de forma simples em html existe uma situação que pode difucultar o entendimento do leitor que é o espaçamento não reservado das letras, o espaço de um "w" é diferente da letra "i". Como resolver isso?"</p>
+         <p>😎De maneira simples e rapida, é só utilizar a tag "code", que esse problema vai deixar de existir:</p>
+         <p>este texto esta corrigido <code>"Cachorro"</code></p>
+         <p>"E como faz para manter a "formatação" ?"
+            <p>exemplo:
+                t1 = strg(input("Qual seu nome?"))
+                print(f'Seja bem-vindo{t1}')
+            </p>
+            <p>É só utilizar a tag <strong>"pre"</strong> e colocar seu texto dentro dessa tag que vai seguir de forma "pré"-definida</p>
+            <pre><p>
+Exemplo:           
+    t1 = strg(input("Qual seu nome?"))
+    print(f'Seja bem-vindo{t1}')
+            </pre>
+            </p>
+            <p>👆isto tambem serve para indentação👆</p>
+            
+            <h2>2°situação problema:</h2>
+            <p>"Eu gostaria de fazer uma sitação, como seria possivel fazer isto com semântica?"</p>
+            <p>Para esta situação existe uma tag chamada <strong>q</strong>, onde você da sentido para as aspas e não será mais uma mera string assim ganhando semântica</p>
+            <p><q>Enquanto o sol não brilha, acendamos uma vela na escuridão</q>(mas não se quebra linha nesse caso)</p>
+            <p>Mas isto é para pequenos trechos para sitações maiores é recomendado usar o <strong>blockquote</strong> e nesta tag tambe é possivel citar "blockquote cite="coloque aqui""</p>
+            <p><blockquote>...Os de cima sobem, e os de baixo descem</blockquote></p>
+        </code>
+        <p>E nada te imprede de misturar tudo o que vimos até agora:</p>
+        <p><blockquote cite="Frase perfeita de anime"><pre>
+    <q>Ta achando o que?
+    rapadura é doce mas não é mole!</q>
+        </pre></blockquote></p>
+        <p>Uma ultima coisa, é possivel fazer citações usando o abbr, exemplo: <abbr title="Roberto esponja">Bob esponja</abbr></p>
+</body> 
+</html>
