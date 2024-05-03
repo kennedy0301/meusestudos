@@ -1,0 +1,15 @@
+#24F024
+#24F0AF
+
+
+#24ECF0
+
+
+
+codigos
+@font-face {
+    font-family:'idroid.otf';
+    src: url(idroid.otf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+};
