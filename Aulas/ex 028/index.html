@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            padding: 10px;
+            background-color: rgba(0, 116, 151, 0.918);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
+            width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+        body{
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(castle-4690710_1280.jpg);
+            
+        }
+        h1{
+            text-align: center;
+        }
+
+        form > p{
+            color: rgb(255, 255, 255);
+        }
+    </style>
 </head>
 <body>
-    <form autocomplete="on" method="post"> 
-        <p>  <label for="inome"  >  Nome:</label>
-            <input  type="text" name="nome" id="inome"></p>
-        <p> <label for="isobrenome"> sobrenome :</label> <input  type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit"></p>
+    <h1>Meu primeiro formulario<br></h1>
+    <form action="cadastro.php" method="post"> 
+        
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" size="30" placeholder="Nome do usuario" required minlength="3" maxlength="15"></input  ></p>
+        <p><label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="3" size="30" placeholder="Digite sua senha" maxlength="15"></input>
+         </p>
+         <p><label for="iidade">Idade:</label> 
+            <input type="date" name="idade" id="iidade">  </p>
+
+        <p>Genero:<br>  <input type="radio" name="sexo" id="imasculino"><label for="imasculino">Masculino</label></p>
+        <p><input type="radio" name="sexo" id="ifeminino"> <label for="ifeminino">Feminino</label></p>
+
+        <p><input type="checkbox"><a href="#">Concordo</a></input></p>
+        <p><input type="file"></p>
+        
+        <p><input type="file"></p>
+        <p>
+            Região:
+            <select name="regiao" id="iregiao" >Regiao
+                <optgroup label="Regiões">
+                    <option value="Sul">Sul</option>
+                    <option value="Norte">Nordeste</option>
+                    <option value="leste">Sudeste</option>
+                    <option value="Oeste">Noroeste</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            Profissões:
+            <input type="text" name="profissões" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="professor">professor</option>
+                <option value="dentista">dentista</option>
+                <option value="publicitario">publicitario</option>
+                <option value="tecnico">tecnico</option>
+            </datalist>
+            
+        </p>
+        <p><input type="submit" value="Enviar"> </input> <input type="reset" value="Limpar"></p>
+        
     </form>
 </body>
 </html>
