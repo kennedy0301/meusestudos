@@ -1,0 +1,15 @@
+body{
+    background-color: aquamarine;
+}
+
+nav{display: none;}
+
+p{
+ font-size: 1.5em;
+}
+
+article{width: 100%;}
+
+article ::after {
+    content: 'esse e meu ultimo texto se nao pegar okat, a vida nao e feita so de acerto';
+}
