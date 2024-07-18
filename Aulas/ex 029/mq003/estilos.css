@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*Tipos de telas
+pequenas telas: ate 600 px
+celular: de 600 px ate 992px
+tablet: 768px até 992px 
+desktop 992px ate 1200
+grandes telas: acima de 1200px
+*/
+
+@media print{
+    body{
+    #pc{display: none;}
+    #celular{display: none;}
+    #impressora{display: block;}
+    #tablete{display: none;}
+    #tv{display: none;}
+    
+
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+}
+
+@media screen  and (min-width:768px) and (max-width: 992px) {/*tablet*/
+    body{
+        background-image: url(estilos/imagens/back-tablet.jpg);
+        #pc{display: none;}
+        #celular{display: none;}
+        #impressora{display: none;}
+        #tablete{display: block;}
+        #tv{display: none;}
+
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px){/*desktop*/
+    body{
+        background-image: url(estilos/imagens/back-pc.jpg);
+        #pc{display: block;}
+        #celular{display: none;}
+        #impressora{display: none;}
+        #tablete{display: none;}
+        #tv{display: none;}
+
+    }   
+}
+
+@media screen and (min-width: 1200px){/*Telas grandes*/
+    body{
+        background-image: url(estilos/imagens/back-tv.jpg);
+        #pc{display: none;}
+        #celular{display: none;}
+        #impressora{display: none;}
+        #tablete{display: none;}
+        #tv{display: block;}
+
+    }
+    
+}
